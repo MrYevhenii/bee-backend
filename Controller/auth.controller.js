@@ -1,19 +1,19 @@
-module.exports.getauth = async (req, res, next) => {
-    console.log(req.query, req.params);
-    res.json('hello auth');
-};
-
-module.exports.postauth = async (req, res, next) => {
+module.exports.forgotPass = async (req, res, next) => {
     console.log(req.query, req.params, req.body);
     res.json('hello auth');
 };
 
-module.exports.putauth = async (req, res, next) => {
+module.exports.postMail = async (req, res, next) => {
     console.log(req.query, req.params, req.body);
     res.json('hello auth');
 };
 
-module.exports.deleteauth = async (req, res, next) => {
-    console.log(req.query, req.params);
+module.exports.phoneSendCode = async (req, res, next) => {
+    console.log(req.query, req.params, req.body);
+    res.json('hello auth');
+};
+
+module.exports.phoneConfirm = async (req, res, next) => {
+    console.log(req.query, req.params, req.body);
     res.json('hello auth');
 };

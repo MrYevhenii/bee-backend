@@ -1,9 +1,14 @@
 const router = require('express-promise-router')();
 const registerController = require('../Controller/register.controller');
 
-router.get('/', registerController.getregister);
-router.post('/', registerController.postregister);
-router.put('/', registerController.putregister);
-router.delete('/', registerController.deleteregister);
+
+router.post('/email', registerController.postMail);
+router.post('/phone/send', registerController.phoneSendCode);
+router.post('/phone/confirm', registerController.phoneConfirm);
+
+
+
+
+
 
 module.exports = router;
