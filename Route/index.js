@@ -7,6 +7,6 @@ module.exports = (app) => {
     app.use('/api/auth',authRouter);
     app.use('/api/register',registerRouter);
     app.use('/api/user',userRouter);
-    
+
     // app.use('/', (req, res, next) => res.json('ok'));
 };
